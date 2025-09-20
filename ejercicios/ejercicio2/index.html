@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de Fibonacci y Factorial</title>
+    <link rel="stylesheet" href="../css/ejercicios.css">
 </head>
 <body>
-    
+    <h2>Calculadora de Fibonacci y Factorial</h2>
+    <form action="calcular.php" method="post">
+        <label for="number">Ingrese un número:</label>
+        <input type="text" id="number" name="number" required>
+        <br>
+        <label for="operation">Seleccione la operación:</label>
+        <select id="operation" name="operation">
+            <option value="fibonacci">Sucesión de Fibonacci</option>
+            <option value="factorial">Factorial</option>
+        </select>
+        <br>
+        <button type="submit">Calcular</button>
+    </form>
 </body>
 </html>
