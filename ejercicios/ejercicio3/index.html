@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de Estadísticas</title>
+    <link rel="stylesheet" href="../css/ejercicios.css">
 </head>
 <body>
-    
+    <h2>Calcular Promedio, Media y Moda</h2>
+    <form action="resultados.php" method="post">
+        <label for="numbers">Ingrese una serie de números reales separados por comas:</label>
+        <input type="text" id="numbers" name="numbers" required>
+        <button type="submit">Calcular</button>
+    </form>
+     <br>
+    <a href="../../index.html">Volver al menú principal</a>
 </body>
 </html>
